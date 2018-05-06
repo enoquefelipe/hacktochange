@@ -10,6 +10,7 @@ export class GeradorEstrategiaComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

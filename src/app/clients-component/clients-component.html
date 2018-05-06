@@ -1,29 +1,53 @@
-<div class="row">
-  <div class="col-md-6">
+<div>
+  <h1>Bem-vindo ao Deep Mailing!</h1>
+</div>
 
-    <div>
-      <h1>Bem-vindo</h1>
-    </div>
+<br>
+<form>
+  <div class="row">
+    <div class="col-md-6">
 
-    <br>
-    
-    <form>
       <div>
         <label for="selecione-cliente">Escolha o contratante</label>
         <select id="cliente" class="form-control">
-          <option>Vivo</option>
-          <option>Tim</option>
           <option>Claro</option>
+          <option>Tim</option>
           <option>Oi</option>
+          <option>Vivo</option>
         </select>
       </div>
 
-      <div>
-        <button class="btn btn-primary botao-proximo" type="button" [routerLink]="['/estrategias']">Próximo</button>
+      <div class="bloco-logos">
+        <img class="img-logos" [src]="CLARO" lass="img-responsive img-circle" alt="claro" />
       </div>
 
-    </form>
+      <div class="bloco-logos">
+        <img class="img-logos" [src]="TIM" lass="img-responsive img-circle" alt="tim" />
+      </div>
+
+      <div class="bloco-logos">
+        <img class="img-logos" [src]="OI" lass="img-responsive img-circle" alt="oi" />
+      </div>
+
+      <div class="bloco-logos">
+        <img class="img-logos" [src]="VIVO" lass="img-responsive img-circle" alt="vivo" />
+      </div>
+
+    </div>
+
+    <div class="col-md-6 text-center">
+      <img class="img-deep" [src]="LOGO" lass="img-responsive" alt="logo" />
+    </div>
 
   </div>
 
-</div>
+  <div class="row">
+    <div class="col-md-12">
+      <hr>
+      <div>
+        <button class="btn btn-primary" type="button" [routerLink]="['/estrategias']">Próximo</button>
+      </div>
+    </div>
+  </div>
+
+</form>
